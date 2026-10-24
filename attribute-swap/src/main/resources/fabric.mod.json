@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "attributeswap",
+  "version": "${version}",
+  "name": "Attribute Swap",
+  "description": "Hit with your mace while holding your spear, or Lunge with your spear while holding something else, in one click.",
+  "authors": ["sath"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.sath.attributeswap.AttributeSwapClient"],
+    "modmenu": ["com.sath.attributeswap.ModMenuIntegration"]
+  },
+  "mixins": ["attributeswap.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
